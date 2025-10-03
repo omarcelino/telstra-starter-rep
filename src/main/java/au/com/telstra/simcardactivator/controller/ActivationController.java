@@ -13,7 +13,7 @@ public class ActivationController {
     private RestTemplate restTemplate;
 
     @PostMapping("/activate")
-    public ResponseEntity<String> activateSim(@RequestBody ActivationRequest request) {
+    public ResponseEntity<String> activateSim(@RequestBody SimCard request) {
         String actuatorUrl = "http://localhost:8444/actuate";
 
         // Forward only ICCID
