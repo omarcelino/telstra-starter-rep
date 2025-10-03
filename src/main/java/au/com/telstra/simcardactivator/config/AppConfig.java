@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class AppConfig {
+
     @Bean
     public SpringApplicationBuilder app() {
         return new SpringApplicationBuilder(SimCardActivator.class);
